@@ -1,0 +1,18 @@
+CREATE TABLE `q_schedule` (
+  `id` varchar(32) NOT NULL,
+  `question_sys` varchar(32) NOT NULL,
+  `question_person` varchar(16) NOT NULL,
+  `resolve_sys` varchar(32) NOT NULL,
+  `resolve_interface` varchar(64) NOT NULL,
+  ` question_descrbe` varchar(255) NOT NULL,
+  `resolve_status` tinyint(2) DEFAULT NULL COMMENT '0-已解决/1-解决中/2-未解决/3-待确认',
+  `resolve_duty_person` varchar(16) DEFAULT NULL,
+  `resolve_dependen_person` varchar(16) DEFAULT NULL,
+  `resolve_priority` tinyint(2) DEFAULT NULL COMMENT '0-低优先级，1-中优先级，2-高优先级',
+  `resolve_back` varchar(255) DEFAULT NULL,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `prepare_resolve_time` datetime NOT NULL,
+  `remark` varchar(255) CHARACTER SET armscii8 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='问题联调进度表';

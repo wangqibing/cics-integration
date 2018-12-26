@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Header/>
+    <S:Body>
+        <ns1:UnderwriteResultConfirmRequest xmlns:ns0="http://service.ccic.com/common/bean"
+                                            xmlns:ns1="http://service.ccic.com/core/underwriteConfirm/bean">
+            <ns1:requestHead>
+                <ns0:seqNo>1</ns0:seqNo>
+                <ns0:consumerSeqNo>1</ns0:consumerSeqNo>
+                <ns0:consumerID>icore</ns0:consumerID>
+            </ns1:requestHead>
+            <ns1:requestBody>
+                <ns1:businessAttribute>0106</ns1:businessAttribute>
+                <ns1:underwriteStatus>
+                    <ns1:certiType>T</ns1:certiType>
+                    <ns1:certiNo>TDFA18330220070000000001</ns1:certiNo>
+                    <ns1:undwrtDate>2018-12-22</ns1:undwrtDate>
+                    <ns1:undwrtStatus>7</ns1:undwrtStatus>
+                    <ns1:undwrtText>核保通过</ns1:undwrtText>
+                </ns1:underwriteStatus>
+                <ns1:underwriteStatus>
+                    <ns1:certiType>T</ns1:certiType>
+                    <ns1:certiNo>TDEA18330220070000000001</ns1:certiNo>
+                    <ns1:undwrtDate>2018-12-22</ns1:undwrtDate>
+                    <ns1:undwrtStatus>7</ns1:undwrtStatus>
+                    <ns1:undwrtText>核保通过</ns1:undwrtText>
+                </ns1:underwriteStatus>
+                <ns1:underwriteStatus>
+                    <ns1:certiType>T</ns1:certiType>
+                    <ns1:certiNo>TEXD18330220070000000001</ns1:certiNo>
+                    <ns1:undwrtDate>2018-12-22</ns1:undwrtDate>
+                    <ns1:undwrtStatus>7</ns1:undwrtStatus>
+                    <ns1:undwrtText>核保通过</ns1:undwrtText>
+                </ns1:underwriteStatus>
+            </ns1:requestBody>
+        </ns1:UnderwriteResultConfirmRequest>
+    </S:Body>
+</S:Envelope>

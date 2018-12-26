@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/work
+    username: root
+    password:
+  profiles:
+    active: dev
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd hh:mm:ss
+  activiti:
+    check-process-definitions: false
+server:
+  servlet:
+    context-path: /integration
+activiti:
+  process : processes/myProcess.bpmn
+databus_mogodb_url: mongodb://10.1.12.122:27047,10.1.12.123:27027/databus_v5real_178

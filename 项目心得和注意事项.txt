@@ -1,0 +1,2 @@
+1.前段数据的时间字符串到后台格式为Date后时间不对，@JsonFormate(value="yyyy-MM-dd hh:mm:ss")
+ 答:时间默认+8小时，需要加上时区  timezone="GMT+8"，正确的为@JsonFormate(value="yyyy-MM-dd hh:mm:ss timezone="GMT+8"")
